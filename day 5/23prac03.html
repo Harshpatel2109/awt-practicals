@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css3 demo</title>
+	<style type="text/css">
+		div{
+			height: 140px;
+			width: 250px;
+			text-align: center;
+			padding-top: 110px;
+			transition: 1s;
+			font-size: 50px;
+			font-weight: bold;
+			color: yellow;
+			background-color: red;
+		}
+		#translate:hover{
+			-webkit-transform:translate(100px,100px);
+			-moz-transform:translate(100px,100px);
+			-ms-transform:translate(100px,100px);
+			-0-transform:translate(100px,100px);
+			transform:translate(100px,100px);
+			background-color: blue;
+		}
+		#rotate:hover{
+			-webkit-transform:rotate(360deg);
+			-moz-transform:rotate(360deg);
+			-ms-transform:rotate(360deg);
+			-0-transform:rotate(360deg);
+			transform:rotate(360deg);
+			background-color: blue;
+		}
+		#threed:hover{
+			-webkit-transform:rotate3d(1,1,0,360deg);
+			-moz-transform:rotate3d(1,1,0,360deg);
+			-ms-transform:rotate3d(1,1,0,360deg);
+			-0-transform:rotate3d(1,1,0,360deg);
+			transform:rotate3d(1,1,0,360deg);
+			background-color: blue;
+		}
+		#skew:hover{
+			-webkit-transform:skew(30deg);
+			-moz-transform:skew(30deg);
+			-ms-transform:skew(30deg);
+			-0-transform:skew(30deg);
+			transform:skew(30deg);
+			background-color: blue;
+		}
+		#scale:hover{
+			-webkit-transform:scale(0.75);
+			-moz-transform:scale(0.75);
+			-ms-transform:scale(0.75);
+			-0-transform:scale(0.75);
+			transform:scale(0.75);
+			background-color: blue;
+		}
+		#opacity:hover{
+			opacity:-1;
+		}
+		#rgbs:hover{
+			background: rgba(120,120,0,1);
+		}
+		#boxshadow:hover
+		{
+			box-shadow: 0px 0px 30px black;
+		}
+		#borderrad:hover{
+			border-radius: 20%
+		}
+		#overflow{
+			height: 250px !important;
+			padding: 0 !important;
+			overflow: auto;
+		}
+	</style>
+</head>
+<body>
+	<div id="translate">translate</div><hr>
+	<div id="rotate">rotate</div><hr>
+	<div id="threed">3d</div><hr>
+	<div id="skew">skew</div><hr>
+	<div id="scale">scale</div><hr>
+	<div id="opacity">opacity</div><hr>
+	<div id="rgbs">rgbs</div><hr>
+	<div id="boxshadow">shadow</div><hr>
+	<div id="borderrad">border</div><hr>
+	<div id="overflow">overflow overflow overflow overflow overflow</div><hr>
+</body>
+</html>
