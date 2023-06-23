@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo background video</title>
+    <style type="text/css">
+        .fullscreen_bg
+        {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+            z-index: -1;
+            background-size: cover;
+        }
+        .fullscreen_bg_video
+        {
+            position: fixed;
+            height: auto;
+            width: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+        nav
+        {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="fullscreen_bg">
+        <video src="video.mp4" autoplay loop muted class="fullscreen_bg_video"></video>
+    </div>
+    <h1 style="color: white;">hello student</h1>
+    <a href="https://www.google.com/maps" target="_blank"><nav>map</nav></a>
+    <a href=\magazine><nav>magazine</nav></a>
+    <a href=\novel><nav>novel</nav></a>
+</body>
+</html>
