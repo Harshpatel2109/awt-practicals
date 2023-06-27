@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sign in form</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		input[type="text"],input[type="Password"]{
+			width: 100%;
+			padding: 12px 40px;
+			margin:8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+		}
+		button{
+			background-color: #4c50af;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			cursor: pointer;
+			width: 100%
+		}
+		button:hover{
+			opacity: 0.8;
+		}
+		.container{
+			padding: 80px;
+		}
+		.fontuser{position: relative;}
+		.fontuser i{position: absolute;left:15px;top:40px;color: darkmagenta;}
+		.fontpassword{position: relative;}
+		.fontpassword i{position: absolute;left:15px;top:40px;color: darkmagenta;}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="fontuser">
+			<label><b>User name</b></label>
+			<input type="text" name="uname" placeholder="enter your username">
+			<i class="fa fa-user fa-lg"></i>
+		</div>
+		<div class="fontpassword">
+			<label><b>Password</b></label>
+			<input type="password" name="psw" placeholder="enter your password">
+			<i class="fa fa-key fa-lg"></i>
+		</div>
+		<button	type="submit">Login</button>
+		<input type="checkbox" checked="checked">remember me </div>
+</body>
+</html>
