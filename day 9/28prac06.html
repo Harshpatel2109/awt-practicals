@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$("#a1").click(function()
+			{
+				$("div").animate({left: '250px'});
+			});
+			$("#a2").click(function()
+			{
+				$("div").animate({
+					left: '250px',
+					opacity: '0.5',
+					height: '150px',
+					width: '150px'
+				});
+			});
+			$("#a3").click(function()
+			{
+				var div = $("div");
+				div.animate({height: '300px',opacity:'0.4'},"slow");
+				div.animate({width: '300px',opacity:'0.8'},"slow");
+				div.animate({height: '150px',opacity:'0.4'},"slow");
+				div.animate({width: '150px',opacity:'0.8'},"slow");
+			});
+		});
+	</script>
+</head>
+<body>
+	<button id="a1">Animation 1</button>
+	<button id="a2">Animation 2</button>
+	<button id="a3">Animation 3</button><br><br><br>
+	<div style="background-color: #98bf21; height: 100px; width: 100px; position: absolute;"></div>
+</body>
+</html>

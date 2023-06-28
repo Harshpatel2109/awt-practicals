@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="">
+	<style type="text/css">
+		body {
+            background-color: #ADADAD;
+        }
+        
+        div {
+            background-color: #DBDBDB;
+            padding-top: 55px;
+            height: 95px;
+            width: 300px;
+            text-align: center;
+            font-size: xx-large;
+        }	
+	</style>
+	<script type="text/javascript">
+		function BodyBGColor(){
+	            document.body.style.backgroundColor = "Blue";
+	    }
+	    function DivBGColor(){
+	        document.getElementById("D1").style.backgroundColor = "Green";
+	    }
+	    function BGDynamic(){
+	        document.body.style.backgroundColor = prompt("Enter Color Name ");
+	    }
+		function BGDivDynamic(){
+	        document.getElementById("D1").style.backgroundColor = prompt("Enter color Name");
+	    }
+	    function bodyBGCP1(){
+	    	document.body.style.backgroundColor = document.getElementById("CP1").value;
+	    } 	
+	    function bodyDIVCP2(){
+	    	document.getElementById("D1").style.backgroundColor = document.getElementById("CP2").value;
+	    }
+	    function bodytxtDIVCP3(){
+	    	document.getElementById("D1").style.color = document.getElementById("CP3").value;
+	    }
+	</script>
+</head>
+<body>
+	<div id="D1">Hello Students </div><br><hr/><br>
+	<input type="button" value="Body-Blue" onclick="BodyBGColor()">
+    <input type="button" value="Div-Green" onclick="DivBGColor()">
+    <br><br><hr/><br>
+    <input type="button" value="BodyBGColor" onclick="BGDynamic()">
+    <input type="button" value="DivBGColor" onclick="BGDivDynamic()">
+    <br><br><hr/><br>
+    <input type="color" id="CP1" onchange="bodyBGCP1()">
+    <input type="color" id="CP2" onchange="bodyDIVCP2()">
+    <input type="color" id="CP3" onchange="bodytxtDIVCP3()">
+    <br><br><hr/>
+</body>
+</html>
