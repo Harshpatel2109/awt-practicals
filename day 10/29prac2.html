@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JQuery Demo</title>
+     
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $("#f").click(function()
+            {
+                $("#p").slideDown("slow");
+            });
+            $("#f2").click(function()
+            {
+                $("#p2").slideUp("slow");
+            });
+            $("#f3").click(function()
+            {
+                $("#p3").slideToggle("slow");
+            });
+        });
+    </script>
+    <Style>
+        #f, #p, #f2, #p2, #f3, #p3
+        {
+            padding: 10px;
+            text-align: center;
+            background-color: rgb(19, 252, 162);
+            border: solid 1px rgb(35, 35, 46);
+        }
+        #p, #p3
+        {
+            padding: 50px;
+            display: none;
+        }
+        #p2
+        {
+            padding: 50px;
+        }
+    </Style>
+</head>
+<body>
+    <div id="f">CLICK TO SLIDE DOWN PANEL</div><br>
+    <div id="p">HELLO WORLD...!!</div><br>
+    <div id="f2">CLICK TO SLIDE UP PANEL</div>
+    <div id="p2">BBYEEEE...!!</div><br>
+    <div id="f3">CLICK TO SLIDE UP AND DOWN PANEL</div><br>
+    <div id="p3">HEYYYYYYYYYYYYY...........!!!!!!!!!!!!!</div><br>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jquery demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $("#t1").focus(function()
+            {
+                $(this).css("background-color","cyan");
+            });
+            $("#t2").blur(function()
+            {
+                $(this).css("background-color","lightgreen");
+            });
+            $("#t3").keypress(function()
+            {
+                alert($(this).val());
+            });
+            $("#t4").keyup(function()
+            {
+                alert($(this).val());
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="textbox" id="t1" placeholder="check Text"><hr>
+    <input type="textbox" id="t2" placeholder="check Text"><hr>
+    <input type="textbox" id="t3" placeholder="check Text"><hr>
+    <input type="textbox" id="t4" placeholder="check Text"><hr>
+</body>
+</html>
