@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Interactions</title>
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js" type="text/javascript"></script>     
+	<style type="text/css">
+		#MyHomeDiv,#MyHorizontalDiv,#MyVerticalDiv,#MyDiv,#MyThreeSecondDelayDiv
+		{
+			width: 200px;
+			height: 200px;
+			padding: 10px;
+			background:red;
+			color: #ffffff;
+			font-size: large;
+			font-weight: bold;
+		}
+		#MyFiftyPixelDiv{
+			width: 400px;
+			height: 200px;
+			padding: 10px;
+			background:red;
+			color: #ffffff;
+			font-size: large;
+			font-weight: bold; 
+		}
+		#MyHomeDiv,#MyHorizontalDiv,#MyVerticalDiv,#MyFiftyPixelDiv,#MyThreeSecondDelayDiv
+		{
+			border: solid 3px #000000;
+		}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#MyDiv").draggable();
+			$("#MyHomeDiv span").draggable({
+				containment:"#MyHomeDiv"
+			});
+			$("#MyHorizontalDiv span").draggable({
+				axis:"x"
+			});
+			$("#MyVerticalDiv span").draggable({
+				axis:"y"
+			});
+			$("#MyFiftyPixelDiv span").draggable({
+				distance:200
+			});
+			$("#MyThreeSecondDelayDiv span").draggable({
+				delay:3000
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="MyDiv">
+		<p>Hello Students..</p>
+	</div>
+	<hr/>
+	<div id="MyHomeDiv">
+		<span>This is My Home And I Can Move Within It only....</span>
+	</div>
+	<hr/>
+	<div id="MyHorizontalDiv">
+		<span>I Can Only Move Horizontally....</span><br/><br/>
+	</div>
+	<hr/>
+	<div id="MyVerticalDiv">
+		<span>I Can Only Move Vertically....</span><br/><br/>
+	</div>
+	<hr/>
+	<div id="MyThreeSecondDelayDiv">
+		<span>I Can Only After Three Seconds</span><br/><br/>
+	</div>
+	<hr/>
+	<div id="MyFiftyPixelDiv">
+		<span>I Can Only After 200px</span><br/><br/>
+	</div>
+	<hr/>
+</body>
+</html>
